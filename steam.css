@@ -70,7 +70,7 @@
 
 
 @font-face {
-    font-family: overwatch;
+    font-family:Overwatch;
     src:url(http://clifffordw.github.io/GamebananaUI/OVERWATCH.ttf);
 }
 
@@ -79,7 +79,7 @@
     src:url(https://files.gamebanana.com/bitpit/nunito-regular_1b89e.ttf);
 }
 
-h1, h2, h3, module > h2 {font-family: overwatch !important;}
+h1, h2, h3, module > h2 {font-family: Overwatch !important;}
 .RichText h1, .RichText h2, .RichText h3 {font-family:Nunito !important;}
 #BodyWrapper {font-family:Nunito;} 
 
