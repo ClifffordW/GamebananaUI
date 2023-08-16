@@ -1,0 +1,606 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+/* Outlast2 by Voxxx */
+/* forked from tom           */
+/*                           */
+/* Gamebanana:voxxx         */
+
+
+
+
+
+
+
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/oldalertsdark.css");
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/scanlines.css");
+@import url("https://bonkmaykr.xyz/index/assets/css/gamebanana/scanlines.css");/*backup version -- github seemed to be having issues with this one*/
+
+@font-face {
+    font-family:Abel;
+    src:url(https://files.gamebanana.com/bitpit/novasquare-regular.ttf);
+}
+
+@font-face {
+    font-family:pixelated;
+    src:url(https://files.gamebanana.com/bitpit/elysian_fields.otf);
+}
+
+@font-face {
+  font-family:statelabel;
+  src:url(https://files.gamebanana.com/bitpit/tom_s_upic.ttf);
+}
+
+@font-face {
+    font-family:Outlast2;
+    src: url(https://clifffordw.github.io/ClifffWidgets/Sounds/outlast_2_game.otf);
+}
+
+h1 {font-size:28px;font-family:Outlast2 !important;text-transform: lowercase;line-height: 1.1em;}
+h2 {font-size:24px;font-family:Outlast2 !important;text-transform: lowercase;line-height: 1.1em;}
+h3 {font-size:18px;font-family:Outlast2 !important;text-transform: lowercase;line-height: 1.1em;}
+
+.RichText h1 {font-size:28px;font-family:Outlast2 !important;}
+.RichText h2 {font-size:22px;font-family:Outlast2 !important;}
+.RichText h3 {font-size:16px;font-family:Outlast2 !important;}
+
+module > h2 {
+    font-family:Outlast2 !important;
+    font-size:21px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    
+}
+nav > wrapper > module > pane > header > strong {
+    /*font-size:30px;*/
+    /*margin-left:5px;*/
+    
+    font-family:var(--NavPaneTitleFontFamily);
+    font-size:var(--NavPaneTitleFontSize);
+}
+
+body {
+    background:url("https://cdn2.steamgriddb.com/file/sgdb-cdn/logo/fc1c379653b4feca4252b4d078352c4d.png"), #000000 !important;
+    background-attachment:fixed !important;
+    background-position: 100% bottom !important;
+    background-size: 20% !important;
+    background-repeat: no-repeat !important;
+}
+
+#BodyWrapper {
+    font-family: sans-serif;
+    background:transparent;
+}
+
+#MainContent {
+    margin-top:0px;
+    padding-top:var(--PrimaryNavHeight);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
+    backdrop-filter: blur(10px);
+}
+
+#PageFooter{
+
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+
+.Record .PreviewWrapper:hover, .Avatar img:hover
+{
+  transition:  .2s;
+  
+  scale: 110%;
+  border-radius: 10px;
+  filter: drop-shadow(0rem 0rem .75rem green) saturate(100%);
+  
+
+}
+
+.Record .PreviewWrapper
+{
+  transition:  .2s;
+  filter:  saturate(50%);
+  
+
+}
+
+.Avatar img
+{
+  transition:  .2s;
+
+  
+
+}
+
+
+
+.Record .PreviewImage
+{
+  border-radius: 8px !important;
+}
+
+
+
+#MedalsModule li:hover
+{
+
+  scale:130%;
+  transition:  .2s;
+  border-radius: 10px;
+  filter: drop-shadow(0rem 0rem .75rem green) saturate(100%);
+}
+
+
+#MedalsModule li
+
+{
+
+  transition: .2s;
+}
+
+
+
+#VisitorsModule .LatestVisitorsGrid, #ViewsModule .Grid {
+    background: #386c3e2b;
+    border-radius: 10px;
+    padding-bottom: 35px !important;
+  }
+  
+  
+  #VisitorsModule .LatestVisitorsGrid, #ViewsModule .Grid {
+      background: #386c3e77 !important;
+      border-radius: 0px 0px 10px 10px;
+      padding-bottom: 35px;
+      border: 2px solid #b3ffb9;
+    }
+
+
+
+    #VisitorsModule  .Grid {
+        background: #386c3e77 !important;
+        border-radius: 0px 0px 10px 10px;
+        padding: 35px;
+        border: 2px solid #b3ffb9;
+    }
+    
+    
+    #VisitorsModule .TabsWrapper, #ViewsModule .TabsWrapper {
+        border-bottom-width: 0 !important;
+    }
+    
+    :root
+    {
+    
+        --TabBackground: #386c3e2b ;
+        --TabBorder: #b3ffb9;
+    }
+
+
+
+
+
+
+#ResponsibilitiesModule div dl dd ul li {
+    border:none;
+    box-shadow:none;
+}
+
+pane article {
+	background:#07440470;
+}
+
+pane, #MasterLog logs log, #BuddyChatPromoColumn {
+  background:rgba(0, 0, 0, 0.85) !important;
+  backdrop-filter: blur(15px);
+
+  border:2px solid #ffffff17 !important;
+  border-radius:10px;
+}
+
+#PrimaryNav {
+  top: 5px;
+  background:rgba(0, 85, 0, 0.288); !important;
+  backdrop-filter: blur(12px);
+  border:2px solid #ffffff17 !important;
+  border-radius:15px 15px 15px 0px;
+}
+
+#SecondaryNav {
+  background:rgba(0, 85, 0, 0.288) !important;
+  border-radius: 0px 0px 15px 15px;
+  border:2px solid #ffffff17 !important;
+ 
+}
+
+
+
+a.Name.gbhsUsed, td.SubmissionType {
+  font-family: 'Outlast2';
+  font-size: 19px;
+  transition: .2s;
+}
+
+
+a,.Linklike {
+
+  transition: 0.2s !important;
+}
+
+
+a:hover, .Linklike:hover {
+  color: var(--LinkHoverColor);
+  font-size: 24px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+#SecondaryNav pane {border:none !important;background:transparent !important;}
+
+#SecondaryNav.Expanded {
+  overflow:visible;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li ul {
+
+    backdrop-filter: blur(9px);
+}
+
+
+:root {
+    --NavUpdatesIndicatorColor:#ffffff;
+
+    --NavPaneBackgroundColor:#00000088;
+
+    --LinkColor:#ffffff; /*#80a0a0*/
+    --LinkHoverColor:#14d40a;
+
+    --ButtonBackground:#ffffff;
+    --ButtonHoverBackgroundColor:#074404; /*cf6430*/
+    --ButtonFontColor:black;
+    --ButtonHoverFontColor:white;
+
+    --BodyWrapperBackground:  url("https://images.alphacoders.com/107/1077265.png");
+
+    --PageTitleFontSize:4em;
+    --PageTitleColor:#ffffff;
+
+    --SubNavigatorBorderColor:#00000088;
+    --SubNavigatorActiveTabBorderColor:#ffffff;
+    --SubNavigatorTabHoverBorderColor:white;
+    --SubNavigatorDropdownBackgroundColor:#07440479;
+
+    --InputTextColor: #ffffff;
+    --InputBackgroundColor: rgba(255, 84, 0, 0.075);
+    --InputHoverBackgroundColor: #062e0b;
+    --InputFocusBackgroundColor: #062e0b;
+    --InputPlaceholderColor: #ffffff88;
+
+    --DefaultTextColor: #fdfdfd;
+    --DefaultBlueColor: #2244ff;
+    --DefaultRedColor: #ff4444;
+    --DefaultRedDarkColor: #f74843;
+    --DefaultGreenColor: #00cc00;
+    --DefaultGreenDarkColor: #5c7e10;
+    --DefaultPurpleColor: #4400ff;
+    --DefaultGreyColor: #c6c6c6;
+    --DefaultOrangeColor: #ff8800;
+    --DefaultYellowColor: #ffff00;
+    --StateLabelBackground: #274428;
+  
+    --MasterLogBackgroundColor: #0e1317;
+    --MasterLogFontSize: 0.9em;
+    --AuxiliaryColumnBackground: transparent;
+    --AuxiliaryColumnBorder: none;
+    --AuxiliaryColumnModuleBorderColor: transparent;
+    
+    --ModuleTitleUnderlineColor:transparent;
+}
+
+.ExtendedContentButton {
+  background: var(--ButtonBackground);
+  color: var(--ButtonFontColor);
+}
+
+.ExtendedContentButton:hover {
+  background: var(--ButtonHoverBackgroundColor);
+  color: var(--ButtonHoverFontColor);
+}
+
+::-webkit-scrollbar {background:transparent;}
+
+::-webkit-scrollbar-track {
+  background-color:#000000;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #b3ffb9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffff88;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: #ffcc00;
+
+
+}::selection {
+  color: black;
+  background: #ffffff;
+}
+
+#GbLogo {
+  filter:hue-rotate(-30deg) !important;
+}
+
+/*partial scrollbar code for Firefox - hamstar*/
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: #bff7c4 #000000;
+    /*scrollbar-width: thin;*/
+  }
+}
+
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 0rem rgba(1, 37, 1, 0.521));
+    }
+
+
+    50% {
+        filter: drop-shadow(0 0 .90rem rgba(0, 134, 0, 0.514));
+    }
+
+    to {
+        filter: drop-shadow(0 0 0rem rgba(1, 37, 1, 0.521));
+    }
+}
+
+
+
+module.PageModule {
+  background: rgba(1, 37, 1, 0.521);
+  backdrop-filter: blur(15px);
+  border:2px solid #ffffff17 !important;
+  border-radius:0px;
+  margin-left:2.5px;
+  margin-right:2.5px;
+  
+}
+
+.PostReplies .PostReplies > .PostsListModule {
+  background:transparent !important;
+  border:none !important;
+}
+
+.PostReplies > .PostsListModule {
+  background:transparent !important;
+}
+
+/*.PostStamps::before {
+  content:"Stamps:";
+}*/
+
+/*.PostStamps {
+  border:2px solid #ffffff17 !important;
+  border-radius: 7.5px;
+  background:#000000cc;
+  padding:2px !important;
+}*/
+
+.PostStamps {
+  overflow-x:visible;
+  white-space: nowrap;
+}
+
+.PostStamps li {
+  border:2px solid !important;
+  padding-right:0px !important;
+  padding-left:10px !important;
+  /*transition-timing-function: ease-out;
+  transition-duration: 0.2s;*/
+  width:25px;
+  overflow-x:hidden;
+  white-space: nowrap;
+  /*margin-bottom: 0px !important;*/
+  margin-bottom: .25em !important;
+  margin-top: .25em !important;
+}
+
+.PostStamps li:hover {
+  border:2px solid !important;
+  padding-right:10px !important;
+  padding-left:10px !important;
+  /*transition-timing-function: ease-out;
+  transition-duration: 0.2s;*/
+  width:auto;
+}
+
+.PostStamps li span {
+  /*overflow-x:hidden;
+  white-space: nowrap;
+  width:0px;*/
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.PostStamps li:hover span {
+  /*width:auto;*/
+  /*transition-timing-function: ease-out;
+  transition-duration: 0.2s;*/
+}
+
+#ImportantLinks li a {
+  background:#274428 !important;
+  color:#ffffff4a !important;
+}
+
+#ImportantLinks li a:hover {
+  background: #074404 !important;
+}
+
+#ImportantLinks li a:hover span {
+  color:#ffffff !important;
+}
+
+
+:root
+{
+	--defaultCursor  : url('http://files.gamebanana.com/bitpit/mac_os_x_default.png'),    default !important;
+	--helpCursor     : url('http://files.gamebanana.com/bitpit/mac_os_x_help.png'),       help !important;
+	--grabCursor     : url('https://i.stack.imgur.com/VYB5Y.png'),                        grab !important;
+	--grabbingCursor : url('https://i.stack.imgur.com/EjHIC.png'),                        grabbing !important;
+	--moveCursor     : url('http://files.gamebanana.com/bitpit/mac_os_x_move.png') 12 12, move !important;
+	--pointerCursor  : url('http://files.gamebanana.com/bitpit/mac_os_x_pointer.png'),    pointer !important;
+}
+
+/*** Default Cursor ***/
+/* -- This is the main cursor which switches to secondary cursors where applicable. -- */
+
+body,
+.lg-outer #lg-dropdown-overlay /* Profile.css <large> */
+{
+	cursor : var(--defaultCursor);
+}
+
+
+
+/*** Help Cursor ***/
+/* -- This is the cursor meant for places which give info on hover/click like Tooltips, stamps, etc. -- */
+
+.RichText .Spoiler,                                  /* GenericPage.css */
+#MedalsModule li,                                    /* Profile.css <small> */
+.PostsListModule .Posts>li article .PostStamps:hover /* Profile.css <large> */
+{
+	cursor : var(--helpCursor);
+}
+
+
+
+/** Grab and Grabbing Cursors ***/
+/* -- These cursors appear over objects that can be grabbed. I don't know where they are being used in GB. -- */
+
+/* Profile.css <large> */
+.lg-outer .lg-thumb-outer.lg-grab .lg-thumb-item,
+.lg-outer.lg-grab img.lg-object
+{
+	cursor : var(--grabCursor);
+}
+
+/* Profile.css <large> */
+.lg-outer .lg-thumb-outer.lg-grabbing .lg-thumb-item,
+.lg-outer.lg-grabbing img.lg-object
+{
+	cursor : var(--grabbingCursor);
+}
+
+
+
+/*** Move Cursor ***/
+/* -- This cursor indicates controls or buttons that can be moved or can be dragged to move an associated object. -- */
+/* -- The '12 12' are X and Y origin coordinates for the cursor. The place where this cursor will render will consider 12px 12px as the center of the custom cursor image instead of the default 0px 0px. -- */
+
+input[type=range]::-webkit-slider-thumb,
+.PageModule>.ModuleTools .MoveButton,
+body.ModuleMoverMode .ContentColumn>module,
+.Editor .ViewModes .Wysiwyg .RichText img,
+.Editor .WysiwygPalettes .ImageInserter ul li,
+.Editor .WysiwygPalettes .BitpitFileInserter ul li,
+.Editor .WysiwygPalettes .UsernameInserter ul li,
+.Editor .WysiwygPalettes .CannedResponseInserter ul li,
+spriteIcon.MiscIcon.SortHandle,
+.SpriteIcon.MiscIcon.SortHandle
+{
+	cursor : var(--moveCursor);
+}
+
+
+
+/*** Pointer Cursor ***/
+/* -- This is the second major cursor next to the default one. It appears over clickable elements like links and buttons. -- */
+
+/* GenericPage.css */
+a,
+.Linklike,
+button,
+.ButtonLike,
+input[type=range]::-webkit-slider-runnable-track,
+select,
+.SelectLike,
+.BeaconParent .Beacon,
+.ExpandableToggle,
+.PageModule>.RelatedLinksButton,
+.MainForm .InputsWrapper .OptionalInput>legend,
+fieldset#Userid .AdvancedElement_InputSuggestionsList li,
+.AdvancedListSettingsModule>.Content .OrderAndSortControls fieldset legend,
+.AdvancedElement_FloatingButtonTabs li,
+.AdvancedElement_InputSuggestionsList li,
+.AdvancedElement_Tabs li,
+.AdvancedElement_GraphicalSelect .OptionsWrapper .Options li,
+.AdvancedElement_Switch.List ul li,
+#MasterLog log .CloseButton,
+.Modal .CloseModal,
+.Editor .ViewModeSwitchers span,
+.Editor .WysiwygPalettes>h4,
+#PrimaryNav controls,
+#SecondaryNav controls,
+body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>icon:hover,
+body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>widget:hover,
+body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>icon:hover,
+body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>widget:hover,
+#HiddenColumnToggleButton,
+#AlertsNavModule pane .Controls .MarkAllAsSeen,
+#ActivityNavModule pane .Controls .MarkAllAsSeen,
+#AlertsNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper,
+#ActivityNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper,
+#GamesNavModule widget ul li,
+#BuddiesNavModule pane #BuddyChatInitiators li,
+.RichText .TableOfContents ul li,
+
+/* index.css */
+#FeaturesSliderModule .Slides .Slide,
+#FeaturesSliderModule .Slides .ExpandedSlide,
+#FeaturesSliderModule .Slides .Slide .Info .Name,
+#FeaturesSliderModule .Slides .ExpandedSlide .Info .Name,
+#SubmissionsListAdvancedListSettingsModule .RecentGames li,
+#SubmissionsListAdvancedListSettingsModule .SelectedGames li,
+
+/* Profile.css <large> */
+#ThanksToggleModule .Content #ShowThanksOptionsToggle.ModalLauncher,
+#UpdatesModule .ToggleContentButton,
+.lg-actions .lg-next,
+.lg-actions .lg-prev,
+.lg-toolbar .lg-icon,
+.lg-outer .lg-thumb-item,
+.lg-outer .lg-toogle-thumb,
+.lg-outer .lg-video .lg-video-play,
+.lg-outer .lg-pager-cont
+{
+	cursor : var(--pointerCursor);
+}
