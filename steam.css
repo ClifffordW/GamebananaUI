@@ -183,12 +183,12 @@ input[type=text], input[type=password], input[type=password], input[type=number]
 
 :root
 {
-	--defaultCursor  : url('http://clifffordw.github.io/GamebananaUI/Cursors/pointer.ico'),    default !important;
-	--helpCursor     : url('http://clifffordw.github.io/GamebananaUI/Cursors/help.ico'),       help !important;
+	--defaultCursor  : url('http://clifffordw.github.io/GamebananaUI/Cursors/pointer.cur'),    default !important;
+	--helpCursor     : url('http://clifffordw.github.io/GamebananaUI/Cursors/help.cur'),       help !important;
 	/* --grabCursor     : url('https://i.stack.imgur.com/VYB5Y.png'),                        grab !important;
 	--grabbingCursor : url('https://i.stack.imgur.com/EjHIC.png'),                        grabbing !important; */
-	--moveCursor     : url('http://clifffordw.github.io/GamebananaUI/Cursors/move.ico') 12 12, move !important;
-	--pointerCursor  : url('http://clifffordw.github.io/GamebananaUI/Cursors/link.ico'),    pointer !important;
+	--moveCursor     : url('http://clifffordw.github.io/GamebananaUI/Cursors/move.cur') 12 12, move !important;
+	--pointerCursor  : url('http://clifffordw.github.io/GamebananaUI/Cursors/link.cur'),    pointer !important;
 }
 
 /*** Default Cursor ***/
