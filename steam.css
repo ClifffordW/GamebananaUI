@@ -15,7 +15,7 @@
         --fgAccentContrastTextColor:0, 0, 0; /*used for text selection, etc*/
         --fgAccentHighlightContrastTextColor:0, 0, 0; /*used for button hovers, etc*/
        
-        --fgAccentColor:46, 245, 254;
+        --fgAccentColor:255 , 255, 255;
         --fgAccentHighlight:0, 247, 232;
         --fgPrimaryColor:0, 0, 0;
         --fgSecondaryColor:97, 18, 13;
@@ -24,7 +24,7 @@
        
         /*Image backgrounds should always be on layer 1.*/
         /*Layer 2 is used as backup until layer 1 loads.*/
-        --fgBackground1:url("https://files.gamebanana.com/bitpit/zeta.gif");
+        --fgBackground1:url("http://clifffordw.github.io/GamebananaUI/BG/bg.png");
         --fgBackground2:#000000;
         --fgWrapperBackground:#000000a0;
        
@@ -60,9 +60,7 @@
         --DefaultYellowColor: #E93500;
                
                 /*Custom cursors*/
-        --defaultCursor:        url("https://files.gamebanana.com/bitpit/duelist.gif"),default !important;
-        --textCursor:   url("https://files.gamebanana.com/bitpit/duelist.gif"),text !important;
-        --pointerCursor:   url("https://files.gamebanana.com/bitpit/bloodblade.gif"),default !important;
+
        
                 /*Unused variables, caused font loading problems. Feel free to ignore*/
 /*
@@ -72,8 +70,8 @@
 
 
 @font-face {
-    font-family:Halo;
-    src:url(https://files.gamebanana.com/bitpit/halo3.ttf);
+    font-family:OVERWATCH;
+    src:url(http://clifffordw.github.io/GamebananaUI/OVERWATCH.ttf);
 }
 
 @font-face {
@@ -81,7 +79,7 @@
     src:url(https://files.gamebanana.com/bitpit/nunito-regular_1b89e.ttf);
 }
 
-h1, h2, h3, module > h2 {font-family:Halo !important;}
+h1, h2, h3, module > h2 {font-family:OVERWATCH !important;}
 .RichText h1, .RichText h2, .RichText h3 {font-family:Nunito !important;}
 #BodyWrapper {font-family:Nunito;} 
 
@@ -92,7 +90,7 @@ h1, h2, h3, module > h2 {font-family:Halo !important;}
 
 #SiteLogo:after
 {
-        content : url('https://files.gamebanana.com/bitpit/116233-logo-halo-download-free-imag_30aa1.png');
+        /* content : url('https://files.gamebanana.com/bitpit/116233-logo-OVERWATCH-download-free-imag_30aa1.png'); */
 }
 
 @media (max-width : 1000px)
@@ -105,7 +103,7 @@ h1, h2, h3, module > h2 {font-family:Halo !important;}
 
         #SiteLogo:after
         {
-                content : url('https://files.gamebanana.com/bitpit/h__gb_6c2f9.png');
+                /* content : url('https://files.gamebanana.com/bitpit/h__gb_6c2f9.png'); */
         }
 }
 
