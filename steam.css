@@ -280,9 +280,15 @@ a:hover, .Linklike:hover {
 
 
 
-wrapper#BodyWrapper, #BodyWrapper {
+wrapper#BodyWrapper {
   --BodyWrapperBackground: #00000000;
   backdrop-filter: blur(15px);
+}
+
+
+#BodyWrapper {
+  --BodyWrapperBackground: #00000000 !important;
+  backdrop-filter: blur(15px) !important;
 }
 
 
