@@ -245,6 +245,18 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 }
 
 
+button, .ButtonLike
+{
+  background: #c56c04;
+}
+
+
+button:hover, button.Selected, button.Expanded, .ButtonLike:hover, .ButtonLike.Selected, .ButtonLike.Expanded
+{
+  background: #c78942;
+}
+
+
 
 a.Name.gbhsUsed, td.SubmissionType {
   font-family: 'Outlast2';
