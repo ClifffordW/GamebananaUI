@@ -280,13 +280,20 @@ a:hover, .Linklike:hover {
 
 
 
-wrapper#BodyWrapper {
+wrapper#BodyWrapper, #BodyWrapper {
   --BodyWrapperBackground: #00000000;
   backdrop-filter: blur(15px);
 }
 
 
+#SubNavigator .BasicSubNavigator,#SubNavigator .DropdownMenuSubNavigator {
+  background: #ffffff24;
+  margin-right: 50px
+}
 
+#SubNavigator .DropdownMenuSubNavigator>li ul>li>a:hover {
+  color: #ff8b04 !important;
+}
 
 
 :root
@@ -359,6 +366,14 @@ spriteIcon.MiscIcon.SortHandle,
 	cursor : var(--moveCursor);
 }
 
+
+#SubNavigator .DropdownMenuSubNavigator>li ul>li {
+  white-space: nowrap;
+  background: #8b8b8b80;
+  font-size: var(--SubNavigatorDropdownFontSize);
+  backdrop-filter: blur(5px);
+  border-radius: 1px;
+}
 
 
 /*** Pointer Cursor ***/
