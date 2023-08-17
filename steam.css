@@ -235,8 +235,8 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
   top: 0px !important;
   background: #68707e9c !important;
   backdrop-filter: blur(15px) !important;
-  border: var(--fgPrimaryNavbarThickness) solid rgba(var(--fgAccentColor), 1) !important;
-  border-radius: 0 0 0 0 !important;
+  border: #000000 !important;
+  border-radius: 0 !important;
   padding: var(--fgPrimaryNavbarPadding) !important;
 }
 
@@ -260,27 +260,28 @@ input[type=text]:hover, input[type=password]:hover, input[type=password]:hover, 
 
 a.Name.gbhsUsed, td.SubmissionType {
   font-family: 'elysian';
-  font-size: 13px;
+  font-size: 15px;
   transition: .2s;
 }
 
 
 a,.Linklike {
 
+  color: rgb(249 249 249) !important;
   transition: 0.2s !important;
 }
 
 
 a:hover, .Linklike:hover {
   color: var(--LinkHoverColor);
-  font-size: 17px !important;
+  font-size: 24px !important;
 }
 
 
 
 
 wrapper#BodyWrapper {
-  --BodyWrapperBackground: #00000029;
+  --BodyWrapperBackground: #00000000;
   backdrop-filter: blur(15px);
 }
 
