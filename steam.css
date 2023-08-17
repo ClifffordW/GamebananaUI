@@ -259,7 +259,7 @@ button:hover, button.Selected, button.Expanded, .ButtonLike:hover, .ButtonLike.S
 
 
 a.Name.gbhsUsed, td.SubmissionType {
-  font-family: 'Outlast2';
+  font-family: 'elysian';
   font-size: 19px;
   transition: .2s;
 }
