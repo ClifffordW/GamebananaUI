@@ -136,6 +136,8 @@ module.PageModule
 
 }
 
+
+
 .Avatar img
 {
   transition:  .2s;
@@ -218,7 +220,7 @@ module.PageModule
 }
 
 pane article {
-	background:#ad51054a;
+  background: #717a8b;
 }
 
 pane, #MasterLog logs log, #BuddyChatPromoColumn {
@@ -230,27 +232,35 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 }
 
 #PrimaryNav {
-  top: 5px;
-  background:#ad51054a; !important;
-  backdrop-filter: blur(12px);
-  border:2px solid #ffffff17 !important;
-  border-radius:15px 15px 15px 0px;
+  top: 0px !important;
+  background: #68707e9c !important;
+  backdrop-filter: blur(15px) !important;
+  border: var(--fgPrimaryNavbarThickness) solid rgba(var(--fgAccentColor), 1) !important;
+  border-radius: 0 0 0 0 !important;
+  padding: var(--fgPrimaryNavbarPadding) !important;
 }
 
 #SecondaryNav {
-  background:#ad51054a !important;
+  background: #848ea0bf !important;
   border-radius: 0px 0px 15px 15px;
-  border:2px solid #ffffff17 !important;
- 
+  border: 2px solid #8897b1 !important;
 }
 
+
+input[type=text]:focus, input[type=password]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus, input[type=num]:focus, input[type=tel]:focus, select:focus, .SelectLike:focus, option:focus, .OptionLike:focus, optgroup:focus, textarea:focus, .TextareaLike:focus {
+  background: rgb(0 0 0 / 42%);
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=password]:hover, input[type=number]:hover, input[type=email]:hover, input[type=num]:hover, input[type=tel]:hover, select:hover, .SelectLike:hover, option:hover, .OptionLike:hover, optgroup:hover, textarea:hover, .TextareaLike:hover {
+  background: #00000029;
+}
 
 
 
 
 a.Name.gbhsUsed, td.SubmissionType {
   font-family: 'elysian';
-  font-size: 19px;
+  font-size: 13px;
   transition: .2s;
 }
 
@@ -263,13 +273,16 @@ a,.Linklike {
 
 a:hover, .Linklike:hover {
   color: var(--LinkHoverColor);
-  font-size: 24px !important;
+  font-size: 17px !important;
 }
 
 
 
 
-
+wrapper#BodyWrapper {
+  --BodyWrapperBackground: #00000029;
+  backdrop-filter: blur(15px);
+}
 
 
 
