@@ -293,12 +293,27 @@ wrapper#BodyWrapper {
 
 
 #SubNavigator .BasicSubNavigator,#SubNavigator .DropdownMenuSubNavigator {
-  background: #ffffff24;
+  background: #4e4e4e78;
   margin-right: 50px
 }
 
 #SubNavigator .DropdownMenuSubNavigator>li ul>li>a:hover {
   color: #ff8b04 !important;
+}
+
+#SubNavigator {
+
+  width: 103% !important;
+}
+
+
+.tippy-box {
+
+  backdrop-filter: blur(15px) !important;
+}
+
+#CoreStatsModule ul small {
+  color: rgb(217 217 217);
 }
 
 
