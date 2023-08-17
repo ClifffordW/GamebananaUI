@@ -16,7 +16,7 @@
         --fgAccentHighlightContrastTextColor:0, 0, 0; /*used for button hovers, etc*/
        
         --fgAccentColor:247, 112, 2;
-        --fgAccentHighlight: #ddb88e;
+        --fgAccentHighlight: 221, 184, 142;
         --fgPrimaryColor:0, 0, 0;
         --fgSecondaryColor:97, 18, 13;
         --fgNavbarColor:0, 0, 0;
@@ -301,10 +301,11 @@ wrapper#BodyWrapper {
   color: #ff8b04 !important;
 }
 
-#SubNavigator {
+#SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
 
-  width: 103% !important;
+  width: 1811px !important;
 }
+
 
 
 .tippy-box {
@@ -394,6 +395,16 @@ spriteIcon.MiscIcon.SortHandle,
   font-size: var(--SubNavigatorDropdownFontSize);
   backdrop-filter: blur(5px);
   border-radius: 1px;
+}
+
+
+
+#PageFooter {
+    text-align: center;
+    padding: 3em;
+    background: #0000006e;
+    border-radius: 12px;
+    scale: 90%;
 }
 
 
