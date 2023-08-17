@@ -15,7 +15,7 @@
         --fgAccentContrastTextColor:0, 0, 0; /*used for text selection, etc*/
         --fgAccentHighlightContrastTextColor:0, 0, 0; /*used for button hovers, etc*/
        
-        --fgAccentColor:255 , 255, 255;
+        --fgAccentColor:247, 112, 2;
         --fgAccentHighlight:0, 247, 232;
         --fgPrimaryColor:0, 0, 0;
         --fgSecondaryColor:97, 18, 13;
@@ -204,7 +204,7 @@ module.PageModule
     {
     
         --TabBackground: #ad51054a ;
-        --TabBorder: #f77002;
+        --TabBorder: rgb(247, 112, 2);
     }
 
 
