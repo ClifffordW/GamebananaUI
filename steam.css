@@ -58,6 +58,8 @@
         --DefaultGreyColor: rgb(var(--fgSecondaryTextColor));
         --DefaultOrangeColor: #ff8800;
         --DefaultYellowColor: #E93500;
+        --CliffC: #ac0404;
+        --CliffC_H: #750000;
                
                 /*Custom cursors*/
 
@@ -112,8 +114,8 @@
 
 module.PageModule
 {
-	background: #955d4287 !important;
-	border: var(--fgModuleThickness) solid #c56c04 !important;
+	background: #95424287 !important;
+	border: var(--fgModuleThickness) solid #ac0404 !important;
 }
 
 
@@ -123,7 +125,7 @@ module.PageModule
   
   scale: 110%;
   border-radius: 10px;
-  filter: drop-shadow(0rem 0rem .75rem #ff0404) saturate(100%);
+  filter: drop-shadow(0rem 0rem .75rem #750000) saturate(100%);
   
 
 }
@@ -161,7 +163,7 @@ module.PageModule
   scale:130%;
   transition:  .2s;
   border-radius: 10px;
-  filter: drop-shadow(0rem 0rem .75rem #ff0404) saturate(100%);
+  filter: drop-shadow(0rem 0rem .75rem #910404) saturate(100%);
 }
 
 
@@ -175,14 +177,14 @@ module.PageModule
 
 
 #VisitorsModule .LatestVisitorsGrid, #ViewsModule .Grid {
-    background: #ad51054a;
+    background: #ad05054a;
     border-radius: 10px;
     padding-bottom: 35px !important;
   }
   
   
   #VisitorsModule .LatestVisitorsGrid, #ViewsModule .Grid {
-      background: #ad51054a !important;
+      background: #ad05054a !important;
       border-radius: 0px 0px 10px 10px;
       padding-bottom: 35px;
       border: 2px solid #b3ffb9;
@@ -191,10 +193,10 @@ module.PageModule
 
 
     #VisitorsModule  .Grid {
-        background: #ad51054a !important;
+        background: #ad05054a !important;
         border-radius: 0px 0px 10px 10px;
         padding: 35px;
-        border: 2px solid #db6504;
+        border: 2px solid #db0404;
     }
     
     
@@ -205,7 +207,7 @@ module.PageModule
     :root
     {
     
-        --TabBackground: #ad51054a ;
+        --TabBackground: #ad05054a ;
         --TabBorder: rgb(168, 11, 11);
     }
 
