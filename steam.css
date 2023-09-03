@@ -222,7 +222,7 @@ module.PageModule
 }
 
 pane article {
-  background: #717a8b;
+  background: #1c1c1cd1;
 }
 
 pane, #MasterLog logs log, #BuddyChatPromoColumn {
@@ -235,9 +235,9 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 
 #PrimaryNav {
   top: 0px !important;
-  background: #68707e9c !important;
+  background: #ffffff2e !important;
   backdrop-filter: blur(15px) !important;
-  border: #000000 !important;
+  border: #ffffff08 !important;
   border-radius: 0 !important;
   padding: var(--fgPrimaryNavbarPadding) !important;
 }
