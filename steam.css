@@ -15,8 +15,8 @@
         --fgAccentContrastTextColor:0, 0, 0; /*used for text selection, etc*/
         --fgAccentHighlightContrastTextColor:0, 0, 0; /*used for button hovers, etc*/
        
-        --fgAccentColor: #b10404;
-        --fgAccentHighlight: #750202;
+        --fgAccentColor: 177, 4, 4;
+        --fgAccentHighlight: 117, 2, 2;
         --fgPrimaryColor:0, 0, 0;
         --fgSecondaryColor:97, 18, 13;
         --fgNavbarColor:0, 0, 0;
