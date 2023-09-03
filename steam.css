@@ -15,7 +15,7 @@
         --fgAccentContrastTextColor:0, 0, 0; /*used for text selection, etc*/
         --fgAccentHighlightContrastTextColor:0, 0, 0; /*used for button hovers, etc*/
        
-        --fgAccentColor:247, 112, 2;
+        --fgAccentColor:168, 11, 11;
         --fgAccentHighlight: 221, 184, 142;
         --fgPrimaryColor:0, 0, 0;
         --fgSecondaryColor:97, 18, 13;
@@ -123,7 +123,7 @@ module.PageModule
   
   scale: 110%;
   border-radius: 10px;
-  filter: drop-shadow(0rem 0rem .75rem #e88005) saturate(100%);
+  filter: drop-shadow(0rem 0rem .75rem #ff0404) saturate(100%);
   
 
 }
@@ -161,7 +161,7 @@ module.PageModule
   scale:130%;
   transition:  .2s;
   border-radius: 10px;
-  filter: drop-shadow(0rem 0rem .75rem #e88005) saturate(100%);
+  filter: drop-shadow(0rem 0rem .75rem #ff0404) saturate(100%);
 }
 
 
@@ -206,7 +206,7 @@ module.PageModule
     {
     
         --TabBackground: #ad51054a ;
-        --TabBorder: rgb(247, 112, 2);
+        --TabBorder: rgb(168, 11, 11);
     }
 
 
@@ -298,7 +298,7 @@ wrapper#BodyWrapper {
 }
 
 #SubNavigator .DropdownMenuSubNavigator>li ul>li>a:hover {
-  color: #ff8b04 !important;
+  color: #ff0404 !important;
 }
 
 #SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
