@@ -16,18 +16,21 @@
 /* bonkmaykr.xyz             */
 /* Gamebanana:bonkmaykr      */
 @import url("https://bonkmaykrq.github.io/gbubers/snippets/oldalertsdark.css");
-@import url("https://bonkmaykrq.github.io/gbubers/snippets/scanlines.css");
-@import url("https://bonkmaykr.xyz/index/assets/css/gamebanana/scanlines.css");/*backup version -- github seemed to be having issues with this one*/
+/*@import url("https://bonkmaykrq.github.io/gbubers/snippets/scanlines.css");
+@import url("https://bonkmaykr.xyz/index/assets/css/gamebanana/scanlines.css");*/ /*backup version -- github seemed to be having issues with this one*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 
 @font-face {
     font-family:Abel;
-    src:url(https://files.gamebanana.com/bitpit/novasquare-regular.ttf);
+    src:url(https://www.fontsquirrel.com/presentation/theme_site/fonts/source_sans_pro/sourcesanspro-regular-webfont.woff);
 }
 
 @font-face {
-    font-family:pixelated;
-    src:url(https://files.gamebanana.com/bitpit/elysian_fields.otf);
+  font-family:pixelated;
+  src:url(https://clifffordw.github.io/GamebananaUI/Montserrat.otf);
 }
+
 
 @font-face {
   font-family:statelabel;
@@ -40,6 +43,8 @@ h3 {font-size:18px;font-family:pixelated !important;text-transform: lowercase;li
 .RichText h1 {font-size:28px;font-family:Abel !important;}
 .RichText h2 {font-size:22px;font-family:Abel !important;}
 .RichText h3 {font-size:16px;font-family:Abel !important;}
+
+
 
 module > h2 {
     font-family:pixelated !important;
@@ -57,10 +62,10 @@ nav > wrapper > module > pane > header > strong {
 }
 
 body {
-    background:url("https://files.gamebanana.com/bitpit/lambda_logo.svg"), #000000 !important;
+    background:url("https://clifffordw.github.io/GamebananaUI/BG/bg.png"), #000000 !important;
     background-attachment:fixed !important;
-    background-position: 100% bottom !important;
-    background-size: 20% !important;
+    backdrop-filter: blur(5px)
+    background-size: 100% !important;
     background-repeat: no-repeat !important;
 }
 
@@ -94,14 +99,14 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
   top: 5px !important;
   background:rgba(0, 0, 0, 0.95) !important;
   /*backdrop-filter: blur(7px);*/
-  border:5px solid #ff8400 !important;
+  border:5px solid #ff0000 !important;
   border-radius:15px 15px 15px 0px;
 }
 
 #SecondaryNav {
   background:rgba(0, 0, 0, 0.75) !important;
   border-radius: 0px 0px 15px 15px;
-  border:5px solid #ff8400 !important;
+  border:5px solid #ff0000 !important;
 }
 
 #SecondaryNav pane {border:none !important;background:transparent !important;}
@@ -111,25 +116,25 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 }
 
 :root {
-    --NavUpdatesIndicatorColor:#ff8400;
+    --NavUpdatesIndicatorColor:#ff0000;
 
     --NavPaneBackgroundColor:#00000088;
 
-    --LinkColor:#ff8400; /*#80a0a0*/
+    --LinkColor:#ff0000; /*#80a0a0*/
     --LinkHoverColor:#ffcccc;
 
-    --ButtonBackground:#ff8400;
-    --ButtonHoverBackgroundColor:#8f6430; /*cf6430*/
+    --ButtonBackground:#ff0000;
+    --ButtonHoverBackgroundColor:#8b0000; /*cf6430*/
     --ButtonFontColor:black;
     --ButtonHoverFontColor:white;
 
     --PageTitleFontSize:4em;
-    --PageTitleColor:#ff8400;
+    --PageTitleColor:#ff0000;
 
     --SubNavigatorBorderColor:#00000088;
-    --SubNavigatorActiveTabBorderColor:#ff8400;
+    --SubNavigatorActiveTabBorderColor:#ff0000;
     --SubNavigatorTabHoverBorderColor:white;
-    --SubNavigatorDropdownBackgroundColor:rgba(255, 84, 0, 0.475);
+    --SubNavigatorDropdownBackgroundColor:rgb(255 0 0 / 48%);
 
     --InputTextColor: #ffffff;
     --InputBackgroundColor: rgba(255, 84, 0, 0.075);
@@ -145,9 +150,9 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
     --DefaultGreenDarkColor: #5c7e10;
     --DefaultPurpleColor: #4400ff;
     --DefaultGreyColor: #c6c6c6;
-    --DefaultOrangeColor: #ff8800;
+    --DefaultOrangeColor: #ff0000;
     --DefaultYellowColor: #ffff00;
-    --StateLabelBackground: #ff8400/*#55cdd477*/;
+    --StateLabelBackground: #ff0000/*#55cdd477*/;
   
     --MasterLogBackgroundColor: #0e1317;
     --MasterLogFontSize: 0.9em;
@@ -175,7 +180,7 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 }
  
 ::-webkit-scrollbar-thumb {
-  background-color: #ff6400;
+  background-color: #ff0000;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -189,7 +194,7 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 
 }::selection {
   color: black;
-  background: #ff8400;
+  background: #ff0000;
 }
 
 #GbLogo {
@@ -199,18 +204,19 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 /*partial scrollbar code for Firefox - hamstar*/
 @supports not selector(::-webkit-scrollbar) {
   * {
-    scrollbar-color: #ff6400 #000000;
+    scrollbar-color: #ff0000 #000000;
     /*scrollbar-width: thin;*/
   }
 }
 
 module.PageModule {
-  background:rgba(255, 84, 0, 0.075);
-  backdrop-filter: blur(10px);
-  border:5px solid #ff8400 !important;
+  background:rgb(134 0 0 / 31%);
+
+  border:5px solid #ff0000 !important;
   border-radius:15px;
   margin-left:2.5px;
   margin-right:2.5px;
+  backdrop-filter: blur(25px);
 }
 
 .PostReplies .PostReplies > .PostsListModule {
@@ -278,7 +284,7 @@ module.PageModule {
 }
 
 #ImportantLinks li a {
-  background:#ff8400 !important;
+  background:#ff0000 !important;
   color:black !important;
 }
 
@@ -287,7 +293,91 @@ module.PageModule {
 }
 
 #ImportantLinks li a:hover span {
-  color:#ff8400 !important;
+  color:#740000 !important;
 }
 
 wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
+
+
+.Record .PreviewWrapper:hover
+{
+  transition:  .2s;
+  
+ 
+  border-radius: 10px;
+  filter: drop-shadow(0rem 0rem .75rem red) saturate(100%);
+  
+  
+
+}
+
+
+.Avatar img:hover
+{
+  transition:  .2s;
+  
+  scale: 110%;
+  border-radius: 10px;
+  filter: drop-shadow(0rem 0rem .75rem red) saturate(100%);
+  
+
+}
+
+
+.Record .PreviewImage
+{
+
+ transition:  .2s;
+  border-radius: 8px !important;
+}
+
+
+
+
+
+.Record .PreviewImage:hover {
+
+    scale: 90%;
+    max-height: 25em;
+    transition: .2s;
+  
+
+}
+
+.Record .PreviewWrapper
+{
+  transition:  .2s;
+  filter:  saturate(50%);
+  
+
+}
+
+
+.Avatar img
+{
+  transition:  .2s;
+
+  
+
+}
+
+#MedalsModule li:hover
+{
+
+  scale:130%;
+  transition:  .2s;
+  border-radius: 10px;
+  filter: drop-shadow(0rem 0rem .75rem #a20000) saturate(100%);
+}
+
+#MedalsModule li
+
+{
+
+  transition: .2s;
+}
+
+.bmAudio
+{
+  display: none;
+}
