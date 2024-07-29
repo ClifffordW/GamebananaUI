@@ -69,6 +69,9 @@ body {
     background-repeat: no-repeat !important;
 }
 
+
+
+
 #BodyWrapper {
     font-family:Abel;
     background:transparent;
@@ -103,6 +106,15 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
   border-radius:15px 15px 15px 0px;
 }
 
+#PrimaryNav module pane, #PrimaryNav>wrapper module pane article, #SecondaryNav module pane, #SecondaryNav>wrapper module pane article, #SubNavigator .DropdownMenuSubNavigator>li ul {
+  scrollbar-width: thin;
+  backdrop-filter: blur(5px) brightness(0.5);
+  border-radius: 8px;
+  border: #b5078fbf solid 2px;
+  background: #51044b47 !important;
+}
+
+
 #SecondaryNav {
   background:rgba(0, 0, 0, 0.75) !important;
   border-radius: 0px 0px 15px 15px;
@@ -114,6 +126,10 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 #SecondaryNav.Expanded {
   overflow:visible;
 }
+
+
+
+
 
 :root {
     --NavUpdatesIndicatorColor:#ff00ff;
@@ -216,7 +232,24 @@ module.PageModule {
   border-radius:15px;
   margin-left:2.5px;
   margin-right:2.5px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) brightness(0.5);
+}
+
+#CoreStatsModule .Card {
+  --FlowGap: .25em;
+  align-items: center;
+  min-width: 10em;
+  border: 2px solid #e118e1;
+  border-radius: 150px;
+  background: #3b0f6245 !important;
+  backdrop-filter: blur(1px);
+}
+
+
+#SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
+    background: #340523c9;
+
+    border-radius: 15px;
 }
 
 .PostReplies .PostReplies > .PostsListModule {
