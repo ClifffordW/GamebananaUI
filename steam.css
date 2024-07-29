@@ -99,14 +99,14 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
   top: 5px !important;
   background:rgba(0, 0, 0, 0.95) !important;
   /*backdrop-filter: blur(7px);*/
-  border:5px solid #ff0000 !important;
+  border:5px solid #ff00ff !important;
   border-radius:15px 15px 15px 0px;
 }
 
 #SecondaryNav {
   background:rgba(0, 0, 0, 0.75) !important;
   border-radius: 0px 0px 15px 15px;
-  border:5px solid #ff0000 !important;
+  border:5px solid #ff00ff !important;
 }
 
 #SecondaryNav pane {border:none !important;background:transparent !important;}
@@ -116,25 +116,25 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 }
 
 :root {
-    --NavUpdatesIndicatorColor:#ff0000;
+    --NavUpdatesIndicatorColor:#ff00ff;
 
     --NavPaneBackgroundColor:#00000088;
 
-    --LinkColor:#ff0000; /*#80a0a0*/
+    --LinkColor:#ff00ff; /*#80a0a0*/
     --LinkHoverColor:#ffcccc;
 
-    --ButtonBackground:#ff0000;
-    --ButtonHoverBackgroundColor:#8b0000; /*cf6430*/
+    --ButtonBackground:#ff00ff;
+    --ButtonHoverBackgroundColor:#8b007f; /*cf6430*/
     --ButtonFontColor:black;
     --ButtonHoverFontColor:white;
 
     --PageTitleFontSize:4em;
-    --PageTitleColor:#ff0000;
+    --PageTitleColor:#ff00ff;
 
     --SubNavigatorBorderColor:#00000088;
-    --SubNavigatorActiveTabBorderColor:#ff0000;
+    --SubNavigatorActiveTabBorderColor:#ff00ff;
     --SubNavigatorTabHoverBorderColor:white;
-    --SubNavigatorDropdownBackgroundColor:rgb(255 0 0 / 48%);
+    --SubNavigatorDropdownBackgroundColor:rgba(255, 0, 242, 0.48);
 
     --InputTextColor: #ffffff;
     --InputBackgroundColor: rgba(255, 84, 0, 0.075);
@@ -150,9 +150,9 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
     --DefaultGreenDarkColor: #5c7e10;
     --DefaultPurpleColor: #4400ff;
     --DefaultGreyColor: #c6c6c6;
-    --DefaultOrangeColor: #ff0000;
+    --DefaultOrangeColor: #ff00ff;
     --DefaultYellowColor: #ffff00;
-    --StateLabelBackground: #ff0000/*#55cdd477*/;
+    --StateLabelBackground: #ff00ff/*#55cdd477*/;
   
     --MasterLogBackgroundColor: #0e1317;
     --MasterLogFontSize: 0.9em;
@@ -180,7 +180,7 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 }
  
 ::-webkit-scrollbar-thumb {
-  background-color: #ff0000;
+  background-color: #ff00ff;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -194,7 +194,7 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 
 }::selection {
   color: black;
-  background: #ff0000;
+  background: #ff00ff;
 }
 
 #GbLogo {
@@ -204,19 +204,19 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 /*partial scrollbar code for Firefox - hamstar*/
 @supports not selector(::-webkit-scrollbar) {
   * {
-    scrollbar-color: #ff0000 #000000;
+    scrollbar-color: #ff00ff #000000;
     /*scrollbar-width: thin;*/
   }
 }
 
 module.PageModule {
-  background:rgb(134 0 0 / 31%);
+  background:rgba(134, 0, 127, 0.31);
 
-  border:5px solid #ff0000 !important;
+  border:5px solid #ff00ff !important;
   border-radius:15px;
   margin-left:2.5px;
   margin-right:2.5px;
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(10px);
 }
 
 .PostReplies .PostReplies > .PostsListModule {
@@ -284,7 +284,7 @@ module.PageModule {
 }
 
 #ImportantLinks li a {
-  background:#ff0000 !important;
+  background:#ff00ff !important;
   color:black !important;
 }
 
@@ -293,7 +293,7 @@ module.PageModule {
 }
 
 #ImportantLinks li a:hover span {
-  color:#740000 !important;
+  color:#740065 !important;
 }
 
 wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
@@ -305,7 +305,7 @@ wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
   
  
   border-radius: 10px;
-  filter: drop-shadow(0rem 0rem .75rem red) saturate(100%);
+  filter: drop-shadow(0rem 0rem .75rem rgb(255, 0, 221)) saturate(100%);
   
   
 
@@ -318,7 +318,7 @@ wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
   
   scale: 110%;
   border-radius: 10px;
-  filter: drop-shadow(0rem 0rem .75rem red) saturate(100%);
+  filter: drop-shadow(0rem 0rem .75rem rgb(195, 0, 255)) saturate(100%);
   
 
 }
@@ -367,7 +367,7 @@ wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
   scale:130%;
   transition:  .2s;
   border-radius: 10px;
-  filter: drop-shadow(0rem 0rem .75rem #a20000) saturate(100%);
+  filter: drop-shadow(0rem 0rem .75rem #9400a2) saturate(100%);
 }
 
 #MedalsModule li
