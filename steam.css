@@ -137,7 +137,6 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
   background-size: 350px;
   background-repeat: no-repeat;
   color: transparent;
-  backdrop-filter: brightness(0.15) blur(15px);
   width: 300px;
   background-clip: padding-box;
 }
