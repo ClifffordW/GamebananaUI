@@ -29,9 +29,19 @@
 
 @font-face {
   font-family: pixelated;
-  src: url(https://clifffordw.github.io/GamebananaUI/Montserrat.otf);
+  src: url(https://clifffordw.github.io/GamebananaUI/Hurofo.ttf);
 }
 
+
+/* @font-face {
+  font-family: pixelated;
+  src: url(https://clifffordw.github.io/GamebananaUI/Montserrat.otf);
+} */
+
+@font-face {
+  font-family: statelabel;
+  src: url(https://files.gamebanana.com/bitpit/tom_s_upic.ttf);
+}
 
 @font-face {
   font-family: statelabel;
@@ -93,7 +103,7 @@ nav>wrapper>module>pane>header>strong {
 }
 
 body {
-  background: url("https://clifffordw.github.io/GamebananaUI/BG/bg.png"), #000000 !important;
+  background: url("https://clifffordw.github.io/GamebananaUI/BG/bg.gif"), #000000 !important;
   background-attachment: fixed !important;
   backdrop-filter: blur(5px) background-size: 100% !important;
   background-repeat: no-repeat !important;
