@@ -17,96 +17,132 @@
 /* Gamebanana:bonkmaykr      */
 @import url("https://bonkmaykrq.github.io/gbubers/snippets/oldalertsdark.css");
 /*@import url("https://bonkmaykrq.github.io/gbubers/snippets/scanlines.css");
-@import url("https://bonkmaykr.xyz/index/assets/css/gamebanana/scanlines.css");*/ /*backup version -- github seemed to be having issues with this one*/
+@import url("https://bonkmaykr.xyz/index/assets/css/gamebanana/scanlines.css");*/
+/*backup version -- github seemed to be having issues with this one*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 
 @font-face {
-    font-family:Abel;
-    src:url(https://www.fontsquirrel.com/presentation/theme_site/fonts/source_sans_pro/sourcesanspro-regular-webfont.woff);
+  font-family: Abel;
+  src: url(https://www.fontsquirrel.com/presentation/theme_site/fonts/source_sans_pro/sourcesanspro-regular-webfont.woff);
 }
 
 @font-face {
-  font-family:pixelated;
-  src:url(https://clifffordw.github.io/GamebananaUI/Montserrat.otf);
+  font-family: pixelated;
+  src: url(https://clifffordw.github.io/GamebananaUI/Montserrat.otf);
 }
 
 
 @font-face {
-  font-family:statelabel;
-  src:url(https://files.gamebanana.com/bitpit/tom_s_upic.ttf);
+  font-family: statelabel;
+  src: url(https://files.gamebanana.com/bitpit/tom_s_upic.ttf);
 }
-h1 {font-size:28px;font-family:pixelated !important;text-transform: lowercase;line-height: 1.1em;}
-h2 {font-size:24px;font-family:pixelated !important;text-transform: lowercase;line-height: 1.1em;}
-h3 {font-size:18px;font-family:pixelated !important;text-transform: lowercase;line-height: 1.1em;}
 
-.RichText h1 {font-size:28px;font-family:Abel !important;}
-.RichText h2 {font-size:22px;font-family:Abel !important;}
-.RichText h3 {font-size:16px;font-family:Abel !important;}
-
-
-
-module > h2 {
-    font-family:pixelated !important;
-    font-size:21px !important;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    
+h1 {
+  font-size: 28px;
+  font-family: pixelated !important;
+  text-transform: lowercase;
+  line-height: 1.1em;
 }
-nav > wrapper > module > pane > header > strong {
-    /*font-size:30px;*/
-    /*margin-left:5px;*/
-    
-    font-family:var(--NavPaneTitleFontFamily);
-    font-size:var(--NavPaneTitleFontSize);
+
+h2 {
+  font-size: 24px;
+  font-family: pixelated !important;
+  text-transform: lowercase;
+  line-height: 1.1em;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: pixelated !important;
+  text-transform: lowercase;
+  line-height: 1.1em;
+}
+
+.RichText h1 {
+  font-size: 28px;
+  font-family: Abel !important;
+}
+
+.RichText h2 {
+  font-size: 22px;
+  font-family: Abel !important;
+}
+
+.RichText h3 {
+  font-size: 16px;
+  font-family: Abel !important;
+}
+
+
+
+module>h2 {
+  font-family: pixelated !important;
+  font-size: 21px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+
+}
+
+nav>wrapper>module>pane>header>strong {
+  /*font-size:30px;*/
+  /*margin-left:5px;*/
+
+  font-family: var(--NavPaneTitleFontFamily);
+  font-size: var(--NavPaneTitleFontSize);
 }
 
 body {
-    background:url("https://clifffordw.github.io/GamebananaUI/BG/bg.png"), #000000 !important;
-    background-attachment:fixed !important;
-    backdrop-filter: blur(5px)
-    background-size: 100% !important;
-    background-repeat: no-repeat !important;
+  background: url("https://clifffordw.github.io/GamebananaUI/BG/bg.png"), #000000 !important;
+  background-attachment: fixed !important;
+  backdrop-filter: blur(5px) background-size: 100% !important;
+  background-repeat: no-repeat !important;
 }
 
 
 
 
 #BodyWrapper {
-    font-family:Abel;
-    background:transparent;
+  font-family: Abel;
+  background: transparent;
 }
 
 #MainContent {
-    margin-top:0px;
-    padding-top:var(--PrimaryNavHeight);
+  margin-top: 0px;
+  padding-top: var(--PrimaryNavHeight);
 }
 
 #ResponsibilitiesModule div dl dd ul li {
-    border:none;
-    box-shadow:none;
+  border: none;
+  box-shadow: none;
 }
 
 pane article {
-	background:rgba(255, 84, 0, 0.075);
+  background: rgba(255, 84, 0, 0.075);
 }
 
-pane, #MasterLog logs log, #BuddyChatPromoColumn {
-  background:rgba(0, 0, 0, 0.85) !important;
+pane,
+#MasterLog logs log,
+#BuddyChatPromoColumn {
+  background: rgba(0, 0, 0, 0.85) !important;
   backdrop-filter: blur(7px);
-  border:2px solid #ff8400 !important;
-  border-radius:10px;
+  border: 2px solid #ff8400 !important;
+  border-radius: 10px;
 }
 
 #PrimaryNav {
   top: 5px !important;
-  background:rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.95) !important;
   /*backdrop-filter: blur(7px);*/
-  border:5px solid #ff00ff !important;
-  border-radius:15px 15px 15px 0px;
+  border: 5px solid #ff00ff !important;
+  border-radius: 15px 15px 15px 0px;
 }
 
-#PrimaryNav module pane, #PrimaryNav>wrapper module pane article, #SecondaryNav module pane, #SecondaryNav>wrapper module pane article, #SubNavigator .DropdownMenuSubNavigator>li ul {
+#PrimaryNav module pane,
+#PrimaryNav>wrapper module pane article,
+#SecondaryNav module pane,
+#SecondaryNav>wrapper module pane article,
+#SubNavigator .DropdownMenuSubNavigator>li ul {
   scrollbar-width: thin;
   backdrop-filter: blur(5px) brightness(0.5);
   border-radius: 8px;
@@ -116,78 +152,108 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 
 
 #SecondaryNav {
-  background:rgba(0, 0, 0, 0.75) !important;
+  background: rgba(0, 0, 0, 0.75) !important;
   border-radius: 0px 0px 15px 15px;
-  border:5px solid #ff00ff !important;
+  border: 5px solid #ff00ff !important;
 }
 
-#SecondaryNav pane {border:none !important;background:transparent !important;}
+#SecondaryNav pane {
+  border: none !important;
+  background: transparent !important;
+}
 
 #SecondaryNav.Expanded {
-  overflow:visible;
+  overflow: visible;
 }
 
 
+
+
+
+
+@keyframes neonFlicker {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px red);
+  }
+  50% {
+    opacity: 0.9;
+    filter: drop-shadow(0 0 20px #dc00ff);
+  }
+}
+
 #PageTitle {
-  background: url(https://clifffordw.github.io/GamebananaUI/zerotsu.png);
+  
   font-size: var(--PageTitleFontSize);
-  margin: 0;
-  padding: 30px;
+  margin: 0px;
+  padding: 0px;
   word-break: break-word;
   background-size: 350px;
   background-repeat: no-repeat;
   color: transparent;
-  width: 300px;
-  background-clip: padding-box;
+  content: url(https://clifffordw.github.io/GamebananaUI/zerotsu.png);
+  
+  width: 500px;
+  
+
+
+  animation: neonFlicker 1.9s infinite;
+
+  
 }
 
 
+
 :root {
-    --NavUpdatesIndicatorColor:#ff00ff;
+  --NavUpdatesIndicatorColor: #ff00ff;
 
-    --NavPaneBackgroundColor:#00000088;
+  --NavPaneBackgroundColor: #00000088;
 
-    --LinkColor:#ff00ff; /*#80a0a0*/
-    --LinkHoverColor:#ffcccc;
+  --LinkColor: #ff00ff;
+  /*#80a0a0*/
+  --LinkHoverColor: #ffcccc;
 
-    --ButtonBackground:#ff00ff;
-    --ButtonHoverBackgroundColor:#8b007f; /*cf6430*/
-    --ButtonFontColor:black;
-    --ButtonHoverFontColor:white;
+  --ButtonBackground: #ff00ff;
+  --ButtonHoverBackgroundColor: #8b007f;
+  /*cf6430*/
+  --ButtonFontColor: black;
+  --ButtonHoverFontColor: white;
 
-    --PageTitleFontSize:4em;
-    --PageTitleColor:#ff00ff;
+  --PageTitleFontSize: 4em;
+  --PageTitleColor: #ff00ff;
 
-    --SubNavigatorBorderColor:#00000088;
-    --SubNavigatorActiveTabBorderColor:#ff00ff;
-    --SubNavigatorTabHoverBorderColor:white;
-    --SubNavigatorDropdownBackgroundColor:rgba(255, 0, 242, 0.48);
+  --SubNavigatorBorderColor: #00000088;
+  --SubNavigatorActiveTabBorderColor: #ff00ff;
+  --SubNavigatorTabHoverBorderColor: white;
+  --SubNavigatorDropdownBackgroundColor: rgba(255, 0, 242, 0.48);
 
-    --InputTextColor: #ffffff;
-    --InputBackgroundColor: rgba(255, 84, 0, 0.075);
-    --InputHoverBackgroundColor: rgba(255, 84, 0, 0.095);
-    --InputFocusBackgroundColor: rgba(255, 84, 0, 0.125);
-    --InputPlaceholderColor: #ffffff88;
+  --InputTextColor: #ffffff;
+  --InputBackgroundColor: rgba(255, 84, 0, 0.075);
+  --InputHoverBackgroundColor: rgba(255, 84, 0, 0.095);
+  --InputFocusBackgroundColor: rgba(255, 84, 0, 0.125);
+  --InputPlaceholderColor: #ffffff88;
 
-    --DefaultTextColor: #fdfdfd;
-    --DefaultBlueColor: #2244ff;
-    --DefaultRedColor: #ff4444;
-    --DefaultRedDarkColor: #f74843;
-    --DefaultGreenColor: #00cc00;
-    --DefaultGreenDarkColor: #5c7e10;
-    --DefaultPurpleColor: #4400ff;
-    --DefaultGreyColor: #c6c6c6;
-    --DefaultOrangeColor: #ff00ff;
-    --DefaultYellowColor: #ffff00;
-    --StateLabelBackground: #ff00ff/*#55cdd477*/;
-  
-    --MasterLogBackgroundColor: #0e1317;
-    --MasterLogFontSize: 0.9em;
-    --AuxiliaryColumnBackground: transparent;
-    --AuxiliaryColumnBorder: none;
-    --AuxiliaryColumnModuleBorderColor: transparent;
-    
-    --ModuleTitleUnderlineColor:transparent;
+  --DefaultTextColor: #fdfdfd;
+  --DefaultBlueColor: #2244ff;
+  --DefaultRedColor: #ff4444;
+  --DefaultRedDarkColor: #f74843;
+  --DefaultGreenColor: #00cc00;
+  --DefaultGreenDarkColor: #5c7e10;
+  --DefaultPurpleColor: #4400ff;
+  --DefaultGreyColor: #c6c6c6;
+  --DefaultOrangeColor: #ff00ff;
+  --DefaultYellowColor: #ffff00;
+  --StateLabelBackground: #ff00ff
+    /*#55cdd477*/
+  ;
+
+  --MasterLogBackgroundColor: #0e1317;
+  --MasterLogFontSize: 0.9em;
+  --AuxiliaryColumnBackground: transparent;
+  --AuxiliaryColumnBorder: none;
+  --AuxiliaryColumnModuleBorderColor: transparent;
+
+  --ModuleTitleUnderlineColor: transparent;
 }
 
 .ExtendedContentButton {
@@ -200,12 +266,14 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
   color: var(--ButtonHoverFontColor);
 }
 
-::-webkit-scrollbar {background:transparent;}
+::-webkit-scrollbar {
+  background: transparent;
+}
 
 ::-webkit-scrollbar-track {
-  background-color:#000000;
+  background-color: #000000;
 }
- 
+
 ::-webkit-scrollbar-thumb {
   background-color: #ff00ff;
 }
@@ -214,18 +282,21 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
   background-color: #ffff88;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: black;
   background: #ffcc00;
 
 
-}::selection {
+}
+
+::selection {
   color: black;
   background: #ff00ff;
 }
 
 #GbLogo {
-  filter:hue-rotate(-30deg) !important;
+  filter: hue-rotate(-30deg) !important;
 }
 
 /*partial scrollbar code for Firefox - hamstar*/
@@ -237,12 +308,12 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 }
 
 module.PageModule {
-  background:rgba(134, 0, 127, 0.31);
+  background: rgba(134, 0, 127, 0.31);
 
-  border:5px solid #ff00ff !important;
-  border-radius:15px;
-  margin-left:2.5px;
-  margin-right:2.5px;
+  border: 5px solid #ff00ff !important;
+  border-radius: 15px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
   backdrop-filter: blur(10px) brightness(0.5);
 }
 
@@ -257,19 +328,20 @@ module.PageModule {
 }
 
 
-#SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
-    background: #340523c9;
+#SubNavigator .BasicSubNavigator,
+#SubNavigator .DropdownMenuSubNavigator {
+  background: #340523c9;
 
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
-.PostReplies .PostReplies > .PostsListModule {
-  background:transparent !important;
-  border:none !important;
+.PostReplies .PostReplies>.PostsListModule {
+  background: transparent !important;
+  border: none !important;
 }
 
-.PostReplies > .PostsListModule {
-  background:transparent !important;
+.PostReplies>.PostsListModule {
+  background: transparent !important;
 }
 
 /*.PostStamps::before {
@@ -284,18 +356,18 @@ module.PageModule {
 }*/
 
 .PostStamps {
-  overflow-x:visible;
+  overflow-x: visible;
   white-space: nowrap;
 }
 
 .PostStamps li {
-  border:2px solid !important;
-  padding-right:0px !important;
-  padding-left:10px !important;
+  border: 2px solid !important;
+  padding-right: 0px !important;
+  padding-left: 10px !important;
   /*transition-timing-function: ease-out;
   transition-duration: 0.2s;*/
-  width:25px;
-  overflow-x:hidden;
+  width: 25px;
+  overflow-x: hidden;
   white-space: nowrap;
   /*margin-bottom: 0px !important;*/
   margin-bottom: .25em !important;
@@ -303,12 +375,12 @@ module.PageModule {
 }
 
 .PostStamps li:hover {
-  border:2px solid !important;
-  padding-right:10px !important;
-  padding-left:10px !important;
+  border: 2px solid !important;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
   /*transition-timing-function: ease-out;
   transition-duration: 0.2s;*/
-  width:auto;
+  width: auto;
 }
 
 .PostStamps li span {
@@ -328,50 +400,49 @@ module.PageModule {
 }
 
 #ImportantLinks li a {
-  background:#ff00ff !important;
-  color:black !important;
+  background: #ff00ff !important;
+  color: black !important;
 }
 
 #ImportantLinks li a:hover {
-  background:black !important;
+  background: black !important;
 }
 
 #ImportantLinks li a:hover span {
-  color:#740065 !important;
+  color: #740065 !important;
 }
 
-wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
+wrapper#BodyWrapper {
+  --BodyWrapperBackground: transparent;
+}
 
 
-.Record .PreviewWrapper:hover
-{
-  transition:  .2s;
-  
- 
+.Record .PreviewWrapper:hover {
+  transition: .2s;
+
+
   border-radius: 10px;
   filter: drop-shadow(0rem 0rem .75rem rgb(255, 0, 221)) saturate(100%);
-  
-  
+
+
 
 }
 
 
-.Avatar img:hover
-{
-  transition:  .2s;
-  
+.Avatar img:hover {
+  transition: .2s;
+
   scale: 110%;
   border-radius: 10px;
   filter: drop-shadow(0rem 0rem .75rem rgb(195, 0, 255)) saturate(100%);
-  
+
 
 }
 
 
-.Record .PreviewImage
-{
+.Record .PreviewImage {
 
- transition:  .2s;
+  transition: .2s;
   border-radius: 8px !important;
 }
 
@@ -381,47 +452,41 @@ wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
 
 .Record .PreviewImage:hover {
 
-    scale: 90%;
-    max-height: 25em;
-    transition: .2s;
-  
+  scale: 90%;
+  max-height: 25em;
+  transition: .2s;
+
 
 }
 
-.Record .PreviewWrapper
-{
-  transition:  .2s;
-  filter:  saturate(50%);
-  
+.Record .PreviewWrapper {
+  transition: .2s;
+  filter: saturate(50%);
+
 
 }
 
 
-.Avatar img
-{
-  transition:  .2s;
+.Avatar img {
+  transition: .2s;
 
-  
+
 
 }
 
-#MedalsModule li:hover
-{
+#MedalsModule li:hover {
 
-  scale:130%;
-  transition:  .2s;
+  scale: 130%;
+  transition: .2s;
   border-radius: 10px;
   filter: drop-shadow(0rem 0rem .75rem #9400a2) saturate(100%);
 }
 
-#MedalsModule li
-
-{
+#MedalsModule li {
 
   transition: .2s;
 }
 
-.bmAudio
-{
+.bmAudio {
   display: none;
 }
