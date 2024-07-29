@@ -128,7 +128,19 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 }
 
 
-
+#PageTitle {
+  background: url(https://clifffordw.github.io/GamebananaUI/zerotsu.png);
+  font-size: var(--PageTitleFontSize);
+  margin: 0;
+  padding: 30px;
+  word-break: break-word;
+  background-size: 350px;
+  background-repeat: no-repeat;
+  color: transparent;
+  backdrop-filter: brightness(0.15) blur(15px);
+  width: 300px;
+  background-clip: padding-box;
+}
 
 
 :root {
